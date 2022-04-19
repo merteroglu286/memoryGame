@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hafiza Oyunu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alertMessage">Emin misin?</string>
+    <string name="alertPositive">Evet</string>
+    <string name="alertNegative">Hayır</string>
+</resources>

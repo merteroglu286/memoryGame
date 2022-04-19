@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/baslangicEkrani">
+
+    <fragment
+        android:id="@+id/oyunEkrani_6x6"
+        android:name="com.example.hafizaoyunu.OyunEkrani_6x6"
+        android:label="fragment_oyun_ekrani_4x4"
+        tools:layout="@layout/fragment_oyun_ekrani_4x4" >
+        <action
+            android:id="@+id/action_oyunEkrani_6x6_to_baslangicEkrani"
+            app:destination="@id/baslangicEkrani" />
+    </fragment>
+    <fragment
+        android:id="@+id/baslangicEkrani"
+        android:name="com.example.hafizaoyunu.BaslangicEkrani"
+        android:label="fragment_baslangic_ekrani"
+        tools:layout="@layout/fragment_baslangic_ekrani" >
+        <action
+            android:id="@+id/action_baslangicEkrani_to_oyunEkrani_6x6"
+            app:destination="@id/oyunEkrani_6x6" />
+        <action
+            android:id="@+id/action_baslangicEkrani_to_oyunEkrani_4x4"
+            app:destination="@id/oyunEkrani_4x4" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunEkrani_4x4"
+        android:name="com.example.hafizaoyunu.OyunEkrani_4x4"
+        android:label="OyunEkrani_4x4" >
+        <action
+            android:id="@+id/action_oyunEkrani_4x4_to_baslangicEkrani"
+            app:destination="@id/baslangicEkrani" />
+    </fragment>
+</navigation>
